@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: hotel-service
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mariadb://localhost:3308/hotels
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+    database: mysql
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8082
