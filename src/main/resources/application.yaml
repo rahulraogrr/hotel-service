@@ -3,11 +3,11 @@ spring:
     name: hotel-service
   config:
     import: optional:configserver:http://localhost:8085
-  datasource:
-    username: root
-    password: root
-    url: jdbc:mariadb://localhost:3308/hotels
-    driver-class-name: org.mariadb.jdbc.Driver
+#  datasource:
+#    username: root
+#    password: root
+#    url: jdbc:mariadb://localhost:3308/hotels
+#    driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
